@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selectors</title>
+    <!-- Usage: .class -->
+    <!-- Class can be Common -->
+    <!-- Apply Style to Same Class Elements -->
+    <style>
+        /* ID Has Higher Priority than Class */
+        #h1 {color: chocolate;} 
+        .h1 {color: red}
+        .h2 {color: blueviolet}
+        .name {color:blue}
+        .data {color: green}
+        .divx {color: cadetblue;}
+    </style>
+</head>
+<body>
+    <h1 class="h1" id="h1">Heading 1</h1>
+    <p class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, velit.</p>
+    <p class="name">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ratione quos culpa quo corporis quod natus et deleniti exercitationem cupiditate.</p>
+    <hr>
+    <h2 class="h2">Heading 2</h2>
+    <p class="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, velit.</p>
+    <p class="data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ratione quos culpa quo corporis.</p>
+    <hr>
+
+    <div class="divx">
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam, omnis beatae explicabo sunt eos facere quam ducimus laudantium dignissimos illum quibusdam! Molestiae, eligendi cupiditate.</p>
+    </div>
+    <hr>
+    <div class="divx">
+        <h3>Heading 4</h3>
+        <p>Lorem ipsum</p>
+    </div>
+</body>
+</html>
