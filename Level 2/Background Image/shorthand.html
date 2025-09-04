@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand CSS</title>
+    <!-- Usage: background: layer1 layer2 layer3 -->
+    <!-- Value: background: color url(path) repeat position / size -->
+    <style>
+        #image {
+            height: 100px;
+            width: 200px;
+            /* background-color: blue;
+            background-image: url(flash.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center; */
+            background: blue url("flash.jpg") no-repeat center / contain;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">Image</div>
+</body>
+</html>
