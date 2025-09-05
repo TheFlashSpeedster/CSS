@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <!-- text-decoration: x y z -->
+    <!-- Value: underline/overline/line-through/wavy dotted/dashed/double color-->
+    <style> 
+        .box {
+            height: 50px;
+            width: 100px;
+            background-color: yellowgreen;
+        }
+        #box1 {
+            text-decoration: underline dotted red;
+        }
+        #box2 {
+            text-decoration: overline dotted green;
+        }
+        #box3 {
+            text-decoration: line-through double blue;
+        }
+        #box4 {
+            text-decoration: underline dashed red;
+        }
+        #box5 {
+            text-decoration: underline wavy green;
+        }
+        #box6 {
+            text-decoration: line-through wavy blue;
+        }
+        #l1 {
+            text-decoration: ;
+        }
+        #l2 {
+            color: green;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box A</div><br>
+    <div id="box2" class="box">Box B</div><br>
+    <div id="box3" class="box">Box C</div><br>
+    <div id="box4" class="box">Box D</div><br>
+    <div id="box5" class="box">Box E</div><br>
+    <div id="box6" class="box">Box F</div><br>
+    <a id="l1" href="#">Link 1 (default)</a><br><br>
+    <a id="l2" href="#">Link 2 (none with color)</a>
+</body>
+</html>
