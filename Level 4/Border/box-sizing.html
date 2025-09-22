@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 50px;
+            width: 100px;
+            margin: 5px;
+            text-align: center;
+        }
+        #a {
+            box-sizing: content-box; /* DEFAULT VALUE - Border/Padding adds upon Content H/W*/
+            border: 5px solid black;
+            padding: 2px;
+            background-color: blue;
+        }
+        #b {
+            box-sizing: border-box; /* Shrinks Content to fit Border/Padding within specified H/W*/
+            border: 5px solid black;
+            padding: 2px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="a" class="box">First Box</div>
+    <div id="b" class="box">Second Box</div>
+</body>
+</html>

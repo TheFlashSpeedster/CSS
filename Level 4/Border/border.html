@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <!-- Border Property -->
+    <!-- Usage: border: width style color -->
+    <!-- width - xpx -->
+    <!-- style - dashed, dotted, double, solid -->
+    <!-- color - red, green, etc -->
+    <style>
+        * {
+            margin: 0; /* margin of whole page */
+            padding: 0; /* padding of whole page */
+        }
+        .box {
+            height: 50px; width: 50px; /* l&b of boxes under "box" class */
+            margin: 5px; /* white separation b/w two elements */
+            text-align: center;
+        }
+        #a {
+            padding: 5px;
+            border: 2px solid chartreuse;
+            background-color: blueviolet;
+        }
+        #b {
+            padding: 10px;
+            border: 4px dashed green;
+            background-color: red;
+        }
+        #c {
+            padding: 15px;
+            border: 6px dotted maroon;
+            background-color: aqua;
+        }
+        #d {
+            padding: 20px;
+            border: 6px double fuchsia;
+            background-color: darkkhaki;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="a" class="box">First Box (solid)</div>
+    <div id="b" class="box">Second Box (dashed)</div>
+    <div id="c" class="box">Third Box (dotted)</div>
+    <div id="d" class="box">Fourth Box (double)</div>
+  </body>
+  </html>
