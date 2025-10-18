@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units: EM</title>
+    <!-- Usage: x em -->
+    <!-- x = relative multiplier wrt parent -->
+    <!-- 1em = 100% of parent, 2em = 200% of body, 0.5em = 50% of parent etc... -->
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        #first
+        {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            font-size: 20px;
+        }
+        #second
+        {
+            height: 50%; /* 50% of parent height */
+            width: 70%; /* 70% of parent width */
+            background-color: purple;
+            font-size: 2em; /* 2 times parent font-size or 200% (relative %)*/ 
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        first
+        <div id="second">
+            second
+        </div>
+    </div>
+</body>
+</html>

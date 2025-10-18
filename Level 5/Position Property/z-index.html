@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <!-- Usage: z-index: x -->
+    <!-- x = integer -->
+    <!-- Stacking Order, Higher = Topmost -->
+    <!-- Body z-index = 0 -->
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        body {
+            position: relative;
+        }
+        .box {
+            height: 50px;
+            width: 100px;
+            margin: 5px;
+            background-color: coral;
+            border: 2px black dashed;
+        }
+        #box1 {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            z-index: 1; /* Lower Order = Below Box 2 */
+        }
+        #box2 {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            z-index: 2; /* Higher Order = Above Box 1 */
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Z-Index 1</div>
+    <div id="box2" class="box">Z-Index 2</div>
+</body>
+</html>

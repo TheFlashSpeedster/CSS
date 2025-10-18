@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Unit: %</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        #first {
+            height: 100px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+        #second {
+            height: 60%; /* 60% of parent (#first) = 60px*/
+            width: 50%; /* 50% of parent (#first) = 100px*/
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">Hello
+        <div id="second">World</div>
+    </div>
+</body>
+</html>

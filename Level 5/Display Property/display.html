@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <!-- Syntax = display: value -->
+    <!-- Values = block, inline, inline-block, none -->
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        .box-block {
+            background-color: brown;
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+            display: block; /* DEFAULT = block (for block elements like div)*/
+        }
+        .box-inline {
+            background-color: bisque;
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+            display: inline;
+        }
+        .box-inline-block {
+            background-color: blueviolet;
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .box-none {
+            background-color: chocolate;
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+        }
+        #box8 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box-block">Box 1 (block)</div>
+    <div id="box2" class="box-block">Box 2 (block)</div>
+    <hr><br>
+
+    <div id="box3" class="box-inline">Box 3 (inline)</div>
+    <div id="box4" class="box-inline">Box 4 (inline)</div>
+    <hr><br>
+
+    <div id="box5" class="box-inline-block">Box 5 (inline-block)</div>
+    <div id="box6" class="box-inline-block">Box 6 (inline-block)</div>
+    <hr>
+
+    <div id="box7" class="box-none">Box 7 (block)</div>
+    <div id="box8" class="box-none">Box 8 (none)</div> 
+    <!-- Removes the Box Completely, and does not take space like Visibility Property -->
+    <div id="box9" class="box-none">Box 9 (block)</div>
+
+</body>
+</html>

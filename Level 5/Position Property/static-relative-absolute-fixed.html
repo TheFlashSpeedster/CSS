@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Position</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: coral;
+            border: 2px black solid;
+        }
+        #static {
+            position: static; /* Default = static */
+        }
+        #relative {
+            position: relative; /* relative to its original static position */
+            top: 120px;
+            left: 120px;
+        }
+        #absolute {
+            position: absolute; /* relative to parent position (here body)*/
+            top: 50px;
+            left: 170px;
+        }
+        #fixed {
+            position: fixed; /* elative to parent position, but NON-Scrollable */
+            top: 50px;
+            left: 170px;
+        }
+    </style> 
+</head>
+<body>
+    <div id="static" class="box">1. Static</div>
+    <div id="relative" class="box">2. Relative</div>
+    <div id="absolute" class="box">3. Absolute</div>
+    <div id="fixed" class="box">4. Fixed</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
