@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex: flex-wrap</title>
+    <!-- Usage: flex-wrap: option -->
+    <!-- option = no-wrap (DEFAULT), wrap, wrap-reverse -->
+    <style>
+        * {margin: 0; padding: 0;}
+        #container {
+            height: 50vh;
+            width: 80vw;
+            margin: 5px;
+            background-color: aqua;
+            border: 3px black solid;
+            display: flex; /* flex (required) */
+            flex-wrap: wrap-reverse; /* no-wrap (DEFAULT), wrap, wrap-reverse */
+        }
+        /* no-wrap - (DEFAULT) */
+        /* wrap - moves items in below rows */
+        /* wrap-reverse - moves items in above rows */
+        .box {
+            margin: 5px;
+            height: 80px;
+            width: 80px;
+            border: 2px red solid;
+            border-radius: 20%;
+            text-align: center;
+            line-height: 80px;
+        }
+        #box1 {background-color: rgb(182, 182, 31);}
+        #box2 {background-color: lime;}
+        #box3 {background-color: rgb(53, 53, 251);}
+        #box4 {background-color: orange;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+        <div id="box4" class="box">Box 4</div>
+    </div>
+</body>
+</html>
