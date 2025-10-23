@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex: align-content</title>
+    <title>Flex Items: align-slef</title>
     <style>
         * {margin: 0; padding: 0;}
         h1 {
@@ -18,8 +18,8 @@
 
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* L2R Alignment */
-            align-content: center; /* Spacing b/w Flex Lines */
+            justify-content: center;
+            align-items: center;
         }
         .item {
             height: 50px;
@@ -35,12 +35,8 @@
     <div class="container">
         <div class="item">1</div>
         <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
+        <div class="item" style="align-self: flex-end;">3</div>
+        <div class="item">4 </div>
     </div>
 </body>
 </html>
