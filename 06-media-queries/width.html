@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width</title>
+    <!-- Modify CSS at Specific Width of Screen -->
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            border: 4px green solid;
+        }
+        @media screen and (width: 200px){
+        #box {
+            background-color: cyan;
+            border: 4px pink solid;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Box</div>
+</body>
+</html>

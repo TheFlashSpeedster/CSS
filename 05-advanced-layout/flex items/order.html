@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items: order</title>
+    <!-- Usage: order: x -->
+    <!-- x = natural number -->
+    <!-- Controls Order of Items in a Flex Container -->
+    <!-- Low Order = First Position -->
+    <!-- High Order = Last Position -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        #container {
+            height: 600px;
+            width: 400px;
+            background-color: lavender;
+            margin: 5px;
+            border: 2px black solid;
+
+            display: flex;
+            justify-content: center; /* X Axis */
+            align-items: center;
+        }
+        .items {
+            height: 75px;
+            width: 75px;
+            margin: 5px;
+            border: 2px black solid;
+            text-align: center;
+        }
+        #item1 {
+            background-color: red;
+            order: 6;
+        }
+        #item2 {
+            background-color: green;
+            order: 3;
+        }
+        #item3 {
+            background-color: cyan;
+            order: 4;
+        }
+        #item4 {
+            background-color: yellow;
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Items: order</h1>
+    <div id="container">
+        <div id="item1" class="items">1 (O6)</div>
+        <div id="item2" class="items">2 (O3)</div>
+        <div id="item3" class="items">3 (O4)</div>
+        <div id="item4" class="items">4 (O2)</div>
+    </div>
+</body>
+</html>

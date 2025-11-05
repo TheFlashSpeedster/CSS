@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform: skew</title>
+    <style>
+        .box {
+            width: 120px;
+            height: 60px;
+            background-color: yellowgreen;
+            border: 2px black solid;
+            border-radius: 5px;
+            margin: 50px;
+
+            transition: all 2s ease-in-out 0s;
+        }
+        #box1:hover {
+            transform: skew(60deg);
+        }
+        #box2:hover {
+            transform: skew(90deg);
+        }
+        #box3:hover {
+            transform: skew(20deg);
+        }
+        #box4:hover {
+            transform: skew(180deg);
+        }
+    </style>
+</head>
+<body>
+     <div class="box" id="box1">skew(60deg)</div>
+    <div class="box" id="box2">skew(90deg)</div>
+    <div class="box" id="box3">skew(20deg)</div>
+    <div class="box" id="box4">skew(180deg)</div>
+</body>
+</html>

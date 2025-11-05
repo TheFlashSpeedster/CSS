@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform: rotate</title>
+    <!-- Rotate Element around a Fixed Point -->
+    <!-- rotate: DEFAULT = rotatez (along z-axis) -->
+     
+    <style>
+        .box {
+            width: 120px;
+            height: 120px;
+            padding: 20px;
+            margin: 30px;
+            border: 2px black solid;
+            border-radius: 5px;
+            background-color: coral;
+
+            transition: all 2s ease-in-out 0s;
+        }
+
+        #box1:hover {
+            transform: rotate(90deg);
+        }
+        #box2:hover {
+            transform: rotatex(180deg);
+        }
+        #box3:hover {
+            transform: rotatey(90deg);
+        }
+        #box4:hover {
+            transform: rotatez(120deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">rotate(90deg)</div> <!-- rotate = rotatez -->
+    <div class="box" id="box2">rotatex(180deg)</div>
+    <div class="box" id="box3">rotatey(90deg)</div>
+    <div class="box" id="box4">rotatez(120deg)</div>
+</body>
+</html>

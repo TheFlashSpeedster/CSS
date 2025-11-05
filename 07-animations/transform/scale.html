@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform: scale</title>
+    <!-- Scale: Modify Scale Factor -->
+    <!-- Default Scale = 1 -->
+    <style>
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: chartreuse;
+            margin: 100px 150px;
+            border: 2px black solid;
+            border-radius: 5px;
+
+            transition: all 2s ease-in-out 0s;
+        }
+
+        #box1:hover {
+            transform: scale(2); /* Scale x2 (Bigger) */
+        }
+        #box2:hover {
+            transform: scale(0.5); /* Scale x0.5 (Smaller) */
+        }
+        #box3:hover {
+            transform: scalex(4); /* ScaleX x4 (Bigger along X) */
+        }
+        #box4:hover {
+            transform: scaley(2); /* ScaleY x2 (Biggger along Y) */
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">scale(2)</div>
+    <div class="box" id="box2">scale(0.5)</div>
+    <div class="box" id="box3">scalex(4)</div>
+    <div class="box" id="box4">scaley(2)</div>
+</body>
+</html>

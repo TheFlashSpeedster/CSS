@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation with %</title>
+    <style>
+        #container {
+            border: violet 4px solid;
+        }
+        .box {
+            width: 120px;
+            height: 80px;
+            background-color: coral;
+            margin: 10px;
+            border: 2px black solid;
+            border-radius: 5px;
+        }
+
+        /* Defining Animation "shift" */
+        /*
+        @keyframes shift{
+            from {
+                margin-left: 10px;
+            }
+            to {
+                margin-left: 100px;
+            }
+        }
+            */
+
+        /* Defining Animation "shift" with % */
+        /* current duration on box1 = 4s */
+        @keyframes shift{
+            0% {
+                margin-left: 10px; /* start (0% of duration = at 0.0s)*/
+            }
+            20% {
+                margin-left: 50px; /* break 1 (20% of duration = at 0.8s) */
+            }
+            40% {
+                margin-left: 100px; /* break 2 (40% of duration = at 1.6s) */
+            }
+            100% {
+                margin-left: 200px; /* end (100% of duration = at 4s)*/
+            }
+        }
+
+        /* Calling Animation "shift" */
+        #box1 {
+            animation: shift 4s ease-in-out infinite 0s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">shift (0% 20% 40% 100%)</div>
+    </div>
+</body>
+</html>

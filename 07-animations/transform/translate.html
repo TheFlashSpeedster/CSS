@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform: translate</title>
+    <!-- translate: Shift Element by px -->
+    <!-- translate = default (translatex) -->
+    <style>
+        .box {
+            width: 180px;
+            height: 80px;
+            margin: 50px;
+            background-color: coral;
+            border: 2px black solid;
+            border-radius: 5px;
+            text-align: center;
+
+            transition: all 2s ease-in-out 0s;
+        }
+        #box1:hover {
+            transform: translate(60px); /* (X) Shift */
+        }
+        #box2:hover {
+            transform: translate(20px, 40px); /* (X,Y) Shift */
+        }
+        #box3:hover {
+            transform: translatex(80px); /* (X) Shift */
+        }
+        #box4:hover {
+            transform: translatey(60px); /* (Y) Shift */
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">translate(60px)</div>
+    <div class="box" id="box2">translate(20px,40px)</div>
+    <div class="box" id="box3">translatex(80px)</div>
+    <div class="box" id="box4">translatey(60px)</div>
+</body>
+</html>

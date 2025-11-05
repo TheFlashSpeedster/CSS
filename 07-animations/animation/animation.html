@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <!-- animation-name: defined animation name -->
+    <!-- animation-duration: duration for one cycle -->
+    <!-- animation-timing-function: pacing of animation (eg. linear, ease-in...) OR animation type -->
+    <!-- animation-delay: delay before animation starts (default = 0s) -->
+    <!-- animation-iteration-count: repetition (default = 1)-->
+    <!-- animation-direction: direction of animation (default = normal)-->
+
+    <style>
+        .box {
+            width: 120px;
+            height: 80px;
+            background-color: coral;
+            border: 2px black solid;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        /* Animation CSS (Defining "shift") */
+        @keyframes shift {
+            from {
+                margin-left: 10px;
+            }
+            to {
+                margin-left: 50px;
+            }
+        }
+
+        #box1 {
+            animation-name: shift; /* calling "shift" animation */
+            animation-duration: 3s; /* duration */
+            animation-timing-function: ease-in-out; /* animation type */
+            animation-iteration-count: 3; /* repetition */
+            animation-delay: 0s; /* delay from animation starts */
+            animation-direction: normal; /* direction */
+        }
+        #box2 {
+            animation-name: shift; /* calling "shift" animation */
+            animation-duration: 3s; /* duration */
+            animation-timing-function: ease-in; /* animation type */
+            animation-iteration-count: infinite; /* repetition */
+            animation-delay: 1s; /* delay from animation starts */
+            animation-direction: alternate; /* direction */
+        }
+        #box3 {
+            /* 
+            animation-name: shift;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-direction: alternate-reverse;
+            */
+
+            /* Shorthand (Combines 6 Properties)*/
+            /* name, duration, timing-function, iteration-count, delay, direction */
+            animation: shift 3s ease-in-out infinite 0s alternate-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">shift (normal)</div>
+    <div class="box" id="box2">shift (alternate)</div>
+    <div class="box" id="box3">shift (alternate-reverse)</div>
+</body>
+</html>

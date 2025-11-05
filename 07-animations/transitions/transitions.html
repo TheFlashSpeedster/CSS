@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <!-- Enables Smooth Animation b/w Changes in CSS Property -->
+    <!-- transition-property: apply transition on specific properties -->
+    <!-- transition-duration: duration of transition -->
+    <!-- transition-delay: delay before transition starts -->
+    <!-- transition-timing-function: speed curve of transition -->
+
+    <style>
+        /* ease-in-out - transition */
+        #btn1 {
+            padding: 20px;
+            background-color: cyan;
+            border: 2px black solid;
+            border-radius: 10px;
+
+            transition-property: all; /* apply transition to all properties */
+            transition-duration: 3s; /* duration of transition */
+            transition-timing-function: ease-in-out; /* transition type */
+            transition-delay: 1s; /* delay before transition starts */
+        }
+
+        #btn1:hover {
+            background-color: yellow;
+            padding: 40px;
+        }
+
+        /* steps() - transition */
+        #btn2 {
+            padding: 20px;
+            background-color: cyan;
+            border: 2px black solid;
+            border-radius: 10px;
+
+            /* SHORTHAND FOR TRANSITION */
+            /* property, duration, timing-function, delay */
+            transition: all 4s steps(6) 2s;
+        }
+
+        #btn2:hover {
+            background-color: yellow;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Transition 1 (ease-in-out)</button>
+    <br><hr>
+    <button id="btn2">Transition 2 (steps)</button>
+</body>
+</html>
