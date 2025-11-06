@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.nav_container {
+    background-color: #040b2d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav_container div {
+    margin: 5px;
+}
+
+.nav_logo {
+	padding: 5px;
+}
+
+.nav_logo img {
+    height: 40px;
+}
+
+.nav_links {
+    height: 100%;
+    min-width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_links a {
+    margin: 10px;
+    text-decoration: none;
+    color: #828596;
+    font-size: 20px;
+}
+
+.nav_links a:hover {
+    color: white;
+    border-bottom: 2px red solid;
+}
+
+.nav_search {
+    height: 40px;
+    min-width: 400px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#search_icon {
+    height: 20px;
+    padding: 10px;
+    color: #8e91a1;
+    background-color: #fff3;
+    border-radius: 5px 0 0 5px;
+    box-sizing: content-box;
+}
+
+#search_input {
+    height: 40px;
+    color: white;
+    background-color: #fff3;
+    border: 2px;
+    border-radius: 0 5px 5px 0;
+    flex-grow: 1;
+}
+
+#search_input:active {
+    border: none;
+}
+
+.nav_currency button {
+    color: #828596;
+    background-color: #fff3;
+    border: 0;
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+}
+
+#nav_inbox_icon {
+    height: 20px;
+    color: #828282;
+}
+
+#nav_inbox_icon:hover {
+    color: white;
+}
+
+.nav_profile {
+    color: white;
+}
+
+.nav_profile {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_profile_icon {
+    color: gold;
+    margin: 10px;
+}
+
+#nav_profile_userid {
+    color: wheat;
+}
+
+main {
+    background-color: #131938;
+}
+
+#popular_heading {
+    font-weight: 700;
+    color: white;
+    font-size: 1.8em;
+    padding: 20px;
+    max-height: 5em;
+}
+
+#popular_items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#popular_items img {
+    width: 200px;
+    margin: 3px;
+}
+
+footer {
+    background-color: #040b2d;
+    position: relative;
+    bottom: 0px;
+    padding-top: 20px;
+}
+
+#copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #9194a3;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 20px;
+}
+
+#copyright div {
+    margin: 5px;
+}
+
+#copyright a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9194a3;
+}
