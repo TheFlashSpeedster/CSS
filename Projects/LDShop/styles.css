@@ -48,7 +48,7 @@
 
 .nav_search {
     height: 40px;
-    min-width: 400px;
+    min-width: 100px;
     width: 30%;
     display: flex;
     align-items: center;
