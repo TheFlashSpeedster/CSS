@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vertical-align</title>
+  <style>
+    .img {
+      background-color: blanchedalmond;
+      margin: 10px;
+    }
+    #img_top {
+      vertical-align: text-top;
+    }
+    #img_middle {
+      vertical-align: middle;
+    }
+    #img_bottom {
+      vertical-align: bottom;
+    }
+  </style>
+</head>
+<body>
+  <h1>vertical-align</h1>
+  <p>Aligns text vertically inside its container</p><hr>
+
+  <div class="img">
+    <img src="/assets/github.png" width="100px" id="img_top">
+    Lorem ipsum dolor sit amet.
+  </div>
+  <div class="img">
+    <img src="/assets/github.png" width="100px" id="img_middle">
+    Lorem ipsum dolor sit amet.
+  </div>
+  <div class="img">
+    <img src="/assets/github.png" width="100px" id="img_bottom">
+    Lorem ipsum dolor sit amet.
+  </div>
+</body>
+</html>

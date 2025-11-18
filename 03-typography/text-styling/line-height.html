@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Line Height</title>
     <style>
+        .text {
+            background-color: lightcoral;
+        }
         #p1 {
-            line-height: 4px;
+            line-height: normal; /* Default */
         }
         #p2 {
-            line-height: 0px;
+            line-height: 80px;
         }
         #p3 {
-            line-height: 80%;
+            line-height: 5px;
         }
     </style>
 </head>
 <body>
-    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, totam.</p><hr>
-    <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, totam.</p><hr>
-    <p id="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, totam.</p>
+    <h1>line-height</h1>
+    <p>Sets the height of each line of text.</p>
+    <hr>
+    
+    <p class="text" id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, totam.</p>
+    <br>
+    <p class="text" id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, totam.</p>
+    <br>
+    <p class="text" id="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, totam.</p>
 </body>
 </html>
